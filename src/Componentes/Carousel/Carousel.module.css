@@ -1,0 +1,35 @@
+.container-carousel {
+  max-width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.img {
+  width: 400px;
+  height: 600px;
+  display: block;
+}
+
+.card-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1500px) {
+  .container-carousel {
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .container-carousel {
+    max-width: 380px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .img {
+    width: 380px;
+    height: 500px;
+    display: block;
+  }
+}

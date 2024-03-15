@@ -1,0 +1,48 @@
+.container-events {
+  min-height: 100vh;
+  color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.buttom-return {
+  display: flex;
+  background-color: transparent;
+  border: none;
+  padding: 20px 40px;
+}
+
+.container-events ul {
+  margin-top: 10px;
+  padding: 0;
+  box-sizing: border-box;
+  width: 30%;
+}
+
+.iten-list {
+  display: flex;
+  list-style: none;
+  padding: 1em 0;
+  align-content: center;
+  margin: 0 10px;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 100%;
+  color: black;
+  border: solid 1px #eee;
+  padding: 1em;
+}
+
+@media (max-width: 1200px) {
+  .container-events ul {
+    width: 50%;
+  }
+}
+
+@media (max-width: 700px) {
+  .container-events ul {
+    width: 90%;
+  }
+}
