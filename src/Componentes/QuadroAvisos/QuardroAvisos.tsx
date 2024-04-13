@@ -1,5 +1,4 @@
 import { EventosType } from "../../types";
-import style from "./quadroAvisos.module.css";
 import moment from "moment";
 import "moment/dist/locale/pt-br";
 import { supabase } from "../../supabaseConfig";
@@ -67,37 +66,47 @@ export function QuadroAvisos() {
     return false;
   };
 
-  console.log(eventos);
-
   return (
-    <div className={style["container-proximos-eventos"]}>
-      <div className={style["container-filtered"]}>
-        <section>
-          <label>
-            <i className="bi bi-filter-right"></i>
+    <div className="border-1 border-blue-950/2000 shadow-2xl  shadow-blue-500/50 p-3 rounded-lg text-slate-900 font-bold flex flex-col dark:border-blue-600/20 dark:shadow-lg dark:shadow-blue-500/50">
+      <div className="flex items-center justify-center p-3 gap-4">
+        <section className=" flex gap-4 p-2" >
+          <label className="text-xs/[12px] uppercase dark:bg-slate-900 dark:text-slate-50">
             Mês:
             <select
+              className="text-slate-900 cursor-pointer dark:bg-slate-900 dark:text-slate-50"
               value={filtroMes === null ? "" : filtroMes.toString()}
               onChange={(e) => setFiltroMes(Number(e.target.value) || null)}
             >
-              <option value="">Todos</option>
+              <option value="" className="text-xs/[12px]">
+                TODOS
+              </option>
               {moment.months().map((mes, index) => (
-                <option key={index} value={(index + 1).toString()}>
+                <option
+                  className="uppercase text-xs/[8PX]"
+                  key={index}
+                  value={(index + 1).toString()}
+                >
                   {mes}
                 </option>
               ))}
             </select>
           </label>
-          <label>
-            <i className="bi bi-filter-right"></i>
+          <label className="text-xs/[12px] uppercase dark:bg-slate-900 dark:text-slate-50">
             Semana:
             <select
+              className="text-slate-900 cursor-pointer dark:bg-slate-900 dark:text-slate-50"
               value={filtroSemana === null ? "" : filtroSemana.toString()}
               onChange={(e) => setFiltroSemana(Number(e.target.value) || null)}
             >
-              <option value="">Todas</option>
+              <option className="text-xs/[12px]" value="">
+                TODAS
+              </option>
               {semanasDisponiveis().map((semana) => (
-                <option key={semana} value={semana.toString()}>
+                <option
+                  className="uppercase text-xs dark:bg-slate-900 dark:text-slate-50"
+                  key={semana}
+                  value={semana.toString()}
+                >
                   Semana {semana - semanasDisponiveis()[0] + 1}
                 </option>
               ))}
@@ -105,7 +114,7 @@ export function QuadroAvisos() {
           </label>
         </section>
         <button
-          className={style["btn-filter"]}
+          className="text-xs/[12px] flex items-center gap-2 uppercase dark:bg-slate-900 dark:text-slate-50"
           onClick={() => {
             setFiltroMes(null);
             setFiltroSemana(null);
@@ -115,7 +124,8 @@ export function QuadroAvisos() {
           Limpar Filtros
         </button>
       </div>
-      <h1 className={style["title-proximos-eventos"]}>Proximos eventos</h1>
+      <h1 className="py-1 uppercase font-bold md: text-[14px] dark:text-slate-50">Proximos eventos</h1>
+      <div className="h-[700px] overflow-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
       {eventos
         ? eventos
             .filter(filterEvents)
@@ -134,34 +144,24 @@ export function QuadroAvisos() {
               (a, b) => Math.abs(a.timeDifference) - Math.abs(b.timeDifference)
             ) // Ordena os eventos pela diferença de tempo
             .map((evento) => (
-              <section
-                className={style["section-promximo-evento"]}
-                key={evento.id}
-              >
-                <div className={style["card-date"]}>
+              <section className="flex w-full items-center my-2 border-1 border-blue-500/10" key={evento.id}>
+                <div className="bg-[#0c4d8d] text-slate-50 flex flex-col w-3/5 uppercase text-sm/[16px] font-bold py-1 px-3 gap-1 md:px-5 md:w-3/12">
                   <span
-                    style={{
-                      borderBottom: " solid 2px #fff",
-                      textAlign: "center",
-                      margin: "10px 0",
-                    }}
+                    className=" border-b-2 border-slate-50 my-2 text-center text-[12px]"
                   >
                     {evento.eventDateTime.locale("pt-br").format("dddd")}
                   </span>
-                  <span>{evento.eventDateTime.format("DD/MM/YYYY")}</span>
-                  <span>{evento.eventDateTime.format("HH:mm:ss")}</span>
+                  <span className=" border-slate-50 text-[12px]">{evento.eventDateTime.format("DD/MM/YYYY")}</span>
+                  <span className=" border-slate-50 text-[12px]">{evento.eventDateTime.format("HH:mm")}</span>
                 </div>
-                <div className={style["card-description"]}>
-                  <span className={style["event-name"]}>
-                    {evento.eventName}
-                  </span>
-                  <p className={style["description-proximo-evento"]}>
-                    {evento.eventDescription}
-                  </p>
+                <div className=" w-full flex flex-col items-center justify-center text-[12px] dark:text-slate-50 md:text-[8px]">
+                  <span className="font-bold md:text-[16px]">{evento.eventName}</span>
+                  <p className="text-red-500 text-[10px] text-center md:text-[14px]">{evento.eventDescription}</p>
                 </div>
               </section>
             ))
         : null}
+        </div>
     </div>
   );
 }

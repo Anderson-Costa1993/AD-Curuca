@@ -21,31 +21,23 @@ export function EventsPage() {
     <div className={style["container-events"]}>
       <button className={style["buttom-return"]}>
         <a href="/">
-          <i
-            className="bi bi-arrow-left"
-            style={{ fontSize: "20px", color: "#0C4D8D" }}
-          ></i>
+          <i className="bi bi-arrow-left"></i>
         </a>
       </button>
       <ul>
         {filteredEvents.map((event) => (
-          <div className={style["iten-list"]}>
-            <li key={event.id}>
-              {" "}
-              {/* Renderizar outros detalhes do evento aqui */}
-              <div className={style.card}>
-                <div className="card-body">
-                  <h5
-                    className="card-title fw-bold"
-                    style={{ color: "#0C4D8D" }}
-                  >
-                    {event.eventName}
-                  </h5>
-                  <p className="card-text">{event.eventDescription}</p>
-                  <span>{new Date(event.Data).toLocaleDateString()}</span>
-                </div>
+          <div className={style["iten-list"]} key={event.id}>
+            <div className="card w-100">
+              <h5 className="card-header">
+                {event.eventName.toLocaleUpperCase()}
+              </h5>
+              <div className="card-body">
+                <h5 className="card-title">
+                  {new Date(event.Data).toLocaleDateString()}
+                </h5>
+                <p className="card-text">{event.eventDescription}</p>
               </div>
-            </li>
+            </div>
           </div>
         ))}
       </ul>
