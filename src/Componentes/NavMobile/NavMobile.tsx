@@ -40,16 +40,16 @@ export function MenuMobile() {
               <LinkNav href="/">Home</LinkNav>
             </li>
             <li>
-              <LinkNav href="/eventos">Eventos</LinkNav>
+              <LinkNav href="#">Eventos</LinkNav>
             </li>
             <li>
-              <LinkNav href="/contatos">Contatos</LinkNav>
+              <LinkNav href="#">Contatos</LinkNav>
             </li>
             <div className="flex items-center justify-center w-full gap-4">
-            <LinkNav href="/contatos">
+            <LinkNav href="https://www.instagram.com/ad.curuca_inaciomonteiro/" target="_blank">
               <i className="bi bi-instagram"></i>
             </LinkNav>
-            <LinkNav href="/contatos">
+            <LinkNav href="#">
               <i className="bi bi-facebook"></i>
             </LinkNav>
           </div>
