@@ -22,7 +22,6 @@ export function BgMain() {
       >
         <div className="border-1 border-slate-600/50 m-1 p-8 rounded-full">
           <div className=" w-48 h-48 border-2 border-slate-600/90 p-10 rounded-full flex flex-col items-center justify-center">
-            <span className="text-slate-300 drop-shadow-2xl">#ADCURUÇÁ</span>
             <img src={logo} alt="" className="w-32 " />
             <span className="text-slate-300">#ADCURUÇÁ</span>
           </div>
