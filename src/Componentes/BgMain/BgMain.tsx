@@ -8,10 +8,11 @@ export function BgMain() {
     backgroundPosition: "top",
     backgroundRepeat: "no-repeat",
     height: "100vh", // Ajuste conforme necessário
+    width: "100%"
   };
 
   return (
-    <div className="relative h-screen" style={{ fontFamily: " Khand, serif" }}>
+    <div className="relative w-full h-screen" style={{ fontFamily: " Khand, serif" }}>
       <div style={divStyle} className="absolute inset-0">
         {/* Conteúdo do seu componente aqui */}
       </div>

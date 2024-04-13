@@ -2,10 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+/* custom.css */
+
+
 body {
   width: 100%;
 }
-/* custom.css */
+
+
 .scrollbar-thin {
   scrollbar-width: thin;
 }

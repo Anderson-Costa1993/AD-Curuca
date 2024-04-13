@@ -18,7 +18,7 @@ export function MenuMobile() {
   };
 
   return (
-    <div className="md:hidden w-full">
+    <div className="lg:hidden w-full">
       <section className="w-full flex items-center  p-2 z-50">
         <div className="flex justify-between items-center w-full">
         <button onClick={() => toggleMenu()}>

@@ -21,7 +21,7 @@ export function Navbar() {
   }, []);
 
   return (
-    <header>
+    <header className="w-full z-50 ">
       <div
         className={`flex justify-center w-full  ${
           scrolled ? "bg-gray-800" : ""
@@ -29,11 +29,12 @@ export function Navbar() {
       >
         <MenuMobile />
         <nav
-          className={`fixed z-50 hidden px-2 w-full py-2 gap-3 text-slate-50 md:flex ${
-            scrolled ? "bg-slate-50 border-b-2 border-slate-/50 dark:bg-slate-900 dark:border-b-2 dark:border-b-blue-500/10 dark:shadow-lg dark:shadow-blue-500/20" : ""
-          } md:justify-center md:items-center`}
+          className={`fixed z-50 hidden px-2 w-screen py-2 gap-3 text-slate-50 lg:flex ${
+            scrolled ? "bg-slate-50 border-b-2 border-slate-/50 dark:bg-slate-950 dark:border-b-2 dark:border-b-blue-500/10 dark:shadow-lg dark:shadow-blue-500/20" : ""
+          } lg:justify-center lg:items-center w-full`}
         >
-          <div className="hidden px-3 w-[1280px] py-3 bg-transparent rounded-lg items-center gap-3 text-slate-50 md:flex">
+          <div className="w-3/5 flex items-center justify-between">
+          <div className="hidden px-3 py-3 bg-transparent rounded-lg items-center gap-3 text-slate-50 lg:flex">
             <img src={fundoImage} alt="" className={`w-[38px]  ${
           scrolled ? "" : "hidden"
         }`} />
@@ -49,6 +50,7 @@ export function Navbar() {
           </div>
           <div>
             <AlterTheme />
+          </div>
           </div>
         </nav>
       </div>

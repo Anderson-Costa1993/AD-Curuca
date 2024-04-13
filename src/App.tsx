@@ -7,13 +7,11 @@ import { BgMain } from "./Componentes/BgMain/BgMain";
 
 function App() {
   return (
-    <div className="flex items-center justify-center bg-slate-50 dark:bg-slate-900">
-      <div className="w-full">
+    <div className=" w-full flex flex-col bg-slate-50 dark:bg-slate-950">
       <Navbar />
       <BgMain />
       <Outlet />
       <Footer />
-      </div>
     </div>
   );
 }

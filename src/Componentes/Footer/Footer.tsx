@@ -2,9 +2,9 @@ import fundoImage from "../../assets/log.ad-removebg-preview.png";
 
 export function Footer() {
   return (
-    <footer className="m-auto md:w-[1280px] ">
+    <footer className="m-auto w-full ">
       <div className="flex flex-col justify-center items-center w-full gap-2">
-        <div className="flex items-center w-full">
+        <div className="flex items-center w-full lg:w-8/12">
           <div className="flex flex-col justify-center items-center w-full gap-8">
             <div className="flex flex-col justify-center items-center w-full gap-2  text-xs text-zinc-900  dark:text-slate-50 md:text-sm">
               <h1>MINISTERIO VILA CURUÇA - SANTO ANDRÉ - SP</h1>
@@ -39,7 +39,7 @@ export function Footer() {
                   </tr>
                   <tr>
                     <td>SÁBADO</td>
-                    <td>ESPCIAL</td>
+                    <td>ESPECIAL</td>
                     <td>18:00</td>
                   </tr>
                   <tr>
@@ -61,7 +61,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="text-sky-950 dark:text-slate-50">
+        <div className="text-sky-950 dark:text-slate-50 text-[12px] py-4">
           <p>Copyright© Todos os direitos reservados</p>
         </div>
       </div>
