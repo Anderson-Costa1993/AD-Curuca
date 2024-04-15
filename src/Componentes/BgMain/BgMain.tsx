@@ -8,11 +8,14 @@ export function BgMain() {
     backgroundPosition: "top",
     backgroundRepeat: "no-repeat",
     height: "100vh", // Ajuste conforme necessário
-    width: "100%"
+    width: "100%",
   };
 
   return (
-    <div className="relative w-full h-screen" style={{ fontFamily: " Khand, serif" }}>
+    <div
+      className="relative w-full h-screen"
+      style={{ fontFamily: " Khand, serif" }}
+    >
       <div style={divStyle} className="absolute inset-0">
         {/* Conteúdo do seu componente aqui */}
       </div>
@@ -21,13 +24,13 @@ export function BgMain() {
         className="absolute inset-0 flex flex-col text-slate-50 uppercase  text-[14px] tracking-[1.5px] justify-center
       items-center z-40 leading-loose gap-4 "
       >
-        <div className="border-1 border-slate-600/50 m-1 p-8 rounded-full">
-          <div className=" w-48 h-48 border-2 border-slate-600/90 p-10 rounded-full flex flex-col items-center justify-center">
-            <img src={logo} alt="" className="w-32 " />
-            <span className="text-slate-300">#ADCURUÇÁ</span>
+        <div className="border-1 border-slate-300/80 m-1 p-8 rounded-full hover:rotate-[360deg] hover:duration-1000  hover:border-2">
+          <div className=" w-54 h-52 border-2 border-slate-50/90 p-10 rounded-full flex flex-col items-center justify-center hover:duration-1000  hover:border-2">
+            <img src={logo} alt="" className="w-32 contrast-125 drop-shadow-2xl hover:rotate-[360deg" />
+            <span className="text-white">#ADCURUÇÁ</span>
           </div>
         </div>
-        <div className="flex flex-col items-center mx-5 text-center text-white">
+        <div className="flex flex-col items-center mx-5 text-center  text-white tracking-[.3rem]">
           <span>Respondeu-lhes Jesus:</span>
           <span>
             Eu sou o caminho, e a verdade, e a vida; ninguém vem ao Pai, senão

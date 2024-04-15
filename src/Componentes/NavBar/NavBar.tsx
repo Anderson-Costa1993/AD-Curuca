@@ -24,13 +24,13 @@ export function Navbar() {
     <header className="w-full z-50 ">
       <div
         className={`flex justify-center w-full  ${
-          scrolled ? "bg-gray-800" : ""
+          scrolled ? "bg-slate-950" : ""
         }`}
       >
         <MenuMobile />
         <nav
-          className={`fixed z-50 hidden px-2 w-screen py-2 gap-3 text-slate-50 lg:flex ${
-            scrolled ? "bg-slate-50 border-b-2 border-slate-/50 dark:bg-slate-950 dark:border-b-2 dark:border-b-blue-500/10 dark:shadow-lg dark:shadow-blue-500/20" : ""
+          className={`fixed z-50 hidden px-2 w-screen py-0 gap-3 text-slate-50 lg:flex ${
+            scrolled ? "bg-slate-50  border-b-2 border-slate-/50 dark:bg-slate-950 dark:border-b-2 dark:border-b-blue-500/10 dark:shadow-lg dark:shadow-blue-500/20" : ""
           } lg:justify-center lg:items-center w-full`}
         >
           <div className="w-3/5 flex items-center justify-between">

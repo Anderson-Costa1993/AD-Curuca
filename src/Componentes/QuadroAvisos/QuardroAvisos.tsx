@@ -91,7 +91,7 @@ export function QuadroAvisos() {
               ))}
             </select>
           </label>
-          <label className="text-xs/[12px] uppercase dark:bg-slate-900 dark:text-slate-50">
+          <label className="text-xs/[12px] uppercase dark:bg-slate-950 dark:text-slate-50">
             Semana:
             <select
               className="text-slate-900 cursor-pointer dark:bg-slate-950 dark:text-slate-50"
@@ -103,7 +103,7 @@ export function QuadroAvisos() {
               </option>
               {semanasDisponiveis().map((semana) => (
                 <option
-                  className="uppercase text-xs dark:bg-slate-900 dark:text-slate-50"
+                  className="uppercase text-xs dark:bg-slate-950 dark:text-slate-50"
                   key={semana}
                   value={semana.toString()}
                 >
@@ -114,7 +114,7 @@ export function QuadroAvisos() {
           </label>
         </section>
         <button
-          className="text-xs/[12px] flex items-center gap-2 uppercase dark:bg-slate-900 dark:text-slate-50"
+          className="text-xs/[12px] flex items-center gap-2 uppercase dark:bg-slate-950 dark:text-slate-50"
           onClick={() => {
             setFiltroMes(null);
             setFiltroSemana(null);
@@ -154,7 +154,7 @@ export function QuadroAvisos() {
                   <span className=" border-slate-50 text-[12px]">{evento.eventDateTime.format("DD/MM/YYYY")}</span>
                   <span className=" border-slate-50 text-[12px]">{evento.eventDateTime.format("HH:mm")}</span>
                 </div>
-                <div className=" w-full flex flex-col items-center justify-center text-[12px] dark:text-slate-50 md:text-[8px]">
+                <div className=" w-full flex flex-col items-center justify-center p-1 text-[12px] dark:text-slate-50 md:text-[8px]">
                   <span className="font-bold md:text-[16px]">{evento.eventName}</span>
                   <p className="text-red-500 text-[10px] text-center md:text-[14px]">{evento.eventDescription}</p>
                 </div>

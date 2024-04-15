@@ -34,7 +34,7 @@ export function MenuMobile() {
         </div>
       </section>
       {onMenu && (
-        <nav className="z-50 flex absolute bg-slate-900/80 w-full">
+        <nav className="z-50 flex absolute bg-slate-950 w-full">
           <ul className="flex flex-col items-start p-2 gap-2 text-slate-50">
             <li>
               <LinkNav href="/">Home</LinkNav>

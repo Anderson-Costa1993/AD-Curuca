@@ -18,9 +18,9 @@ export function Footer() {
                   alt="Descrição da imagem"
                 />
               </div>
-              <table className="w-9/12 text-xs text-center md:w-4/12">
+              <table className="w-9/12 text-xs font-bold text-center md:w-4/12">
                 <thead className="my-4">
-                  <tr className="text-sky-800 dark:text-sky-400">
+                  <tr className="text-sky-800  dark:text-sky-400">
                     <th>CULTOS</th>
                     <th>DE</th>
                     <th>HORÁRIOS</th>
