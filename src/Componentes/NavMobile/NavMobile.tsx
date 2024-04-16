@@ -49,7 +49,7 @@ export function MenuMobile() {
             <LinkNav href="https://www.instagram.com/ad.curuca_inaciomonteiro/" target="_blank">
               <i className="bi bi-instagram"></i>
             </LinkNav>
-            <LinkNav href="#">
+            <LinkNav href="https://www.facebook.com/iead.inaciomonteiro" target="_blank">
               <i className="bi bi-facebook"></i>
             </LinkNav>
           </div>

@@ -6,7 +6,7 @@ export function Footer() {
       <div className="flex flex-col justify-center items-center w-full gap-2">
         <div className="flex items-center w-full lg:w-8/12">
           <div className="flex flex-col justify-center items-center w-full gap-8">
-            <div className="flex flex-col justify-center items-center w-full gap-2  text-xs text-zinc-900  dark:text-slate-50 md:text-sm">
+            <div className="flex flex-col justify-center items-center w-full gap-2 font-semibold text-xs text-zinc-900  dark:text-slate-50 md:text-sm">
               <h1>MINISTERIO VILA CURUÇA - SANTO ANDRÉ - SP</h1>
               <h2>CONGREGAÇÃO INÁCIO MONTEIRO</h2>
             </div>
