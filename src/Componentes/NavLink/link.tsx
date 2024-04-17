@@ -22,8 +22,8 @@ export function LinkNav(props: LinkNavProps) {
   return (
     <a
       href=""
-      className={`text-slat-900 uppercase font-bold text-[12px] hover:border-b-2 border-b-slate-50 text-slate-50
-      dark:text-slate-50 dark:border-b-blue-500/60 ${
+      className={`text-slat-900 uppercase font-bold text-[12px] hover:border-b-2 border-b-slate-50 text-slate-950
+       dark:text-slate-50 dark:border-b-blue-500/60 ${
         scrolled ? "text-zinc-900 border-b-zinc-900/80" : ""
       } md:justify-center md:items-center`}
       {...props}

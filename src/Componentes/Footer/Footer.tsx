@@ -10,7 +10,7 @@ export function Footer() {
               <h1>MINISTERIO VILA CURUÇA - SANTO ANDRÉ - SP</h1>
               <h2>CONGREGAÇÃO INÁCIO MONTEIRO</h2>
             </div>
-            <section className="flex flex-col items-center gap-4 justify-center w-full border-t border-sky-800/40 p-4 md:flex-row md:justify-around">
+            <section className="flex flex-col items-center gap-4 justify-center w-full border-t border-sky-800/40 p-4 lg:flex-row md:justify-around">
               <div className="w-32">
                 <img
                   className="w-16 m-auto"
@@ -18,7 +18,7 @@ export function Footer() {
                   alt="Descrição da imagem"
                 />
               </div>
-              <table className="w-9/12 text-xs font-bold text-center md:w-4/12">
+              <table className="w-4/5 text-xs font-bold text-center md:w-4/12">
                 <thead className="my-4">
                   <tr className="text-sky-800  dark:text-sky-400">
                     <th>CULTOS</th>

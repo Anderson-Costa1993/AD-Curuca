@@ -1,4 +1,4 @@
-import { Carousel } from "../../Componentes/Carouseu/Carouseu";
+import { Carousel } from "../../Componentes/Carousel/Carousel";
 import { QuadroAvisos } from "../../Componentes/QuadroAvisos/QuardroAvisos";
 
 

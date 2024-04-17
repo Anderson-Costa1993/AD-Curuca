@@ -73,7 +73,7 @@ export function QuadroAvisos() {
           <label className="text-xs/[12px] uppercase dark:bg-slate-950 dark:text-slate-50">
             Mês:
             <select
-              className= "bg-white text-slate-950 cursor-pointer dark:bg-slate-950 dark:text-slate-50"
+              className= "bg-transparent text-slate-950 cursor-pointer dark:bg-slate-950 dark:text-slate-50"
               value={filtroMes === null ? "" : filtroMes.toString()}
               onChange={(e) => setFiltroMes(Number(e.target.value) || null)}
             >
@@ -94,7 +94,7 @@ export function QuadroAvisos() {
           <label className="text-xs/[12px] uppercase dark:bg-slate-950 dark:text-slate-50">
             Semana:
             <select
-              className=" bg-white text-slate-900 cursor-pointer dark:bg-slate-950 dark:text-slate-50"
+              className=" bg-transparent text-slate-900 cursor-pointer dark:bg-slate-950 dark:text-slate-50"
               value={filtroSemana === null ? "" : filtroSemana.toString()}
               onChange={(e) => setFiltroSemana(Number(e.target.value) || null)}
             >
