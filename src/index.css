@@ -4,11 +4,9 @@
 
 /* custom.css */
 
-
 body {
   width: 100%;
 }
-
 
 .scrollbar-thin {
   scrollbar-width: thin;
@@ -24,4 +22,28 @@ body {
 
 .scrollbar-track-gray-100::-webkit-scrollbar-track {
   background-color: #00359f; /* cor da faixa da barra de rolagem */
+}
+
+
+@keyframes moveRightToLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes moveLeftToRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Iniciar a animação */
+.animate-moveRightToLeft {
+  animation: moveRightToLeft 24s linear infinite;
 }

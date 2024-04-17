@@ -77,7 +77,7 @@ export function QuadroAvisos() {
               value={filtroMes === null ? "" : filtroMes.toString()}
               onChange={(e) => setFiltroMes(Number(e.target.value) || null)}
             >
-              <option value="" className="text-xs/[12px]">
+              <option value="" className=" bg-white text-xs/[12px]">
                 TODOS
               </option>
               {moment.months().map((mes, index) => (
@@ -94,11 +94,11 @@ export function QuadroAvisos() {
           <label className="text-xs/[12px] uppercase dark:bg-slate-950 dark:text-slate-50">
             Semana:
             <select
-              className="text-slate-900 cursor-pointer dark:bg-slate-950 dark:text-slate-50"
+              className=" bg-whit text-slate-900 cursor-pointer dark:bg-slate-950 dark:text-slate-50"
               value={filtroSemana === null ? "" : filtroSemana.toString()}
               onChange={(e) => setFiltroSemana(Number(e.target.value) || null)}
             >
-              <option className="text-xs/[12px]" value="">
+              <option className="text-xs/[12px] bg-white" value="">
                 TODAS
               </option>
               {semanasDisponiveis().map((semana) => (
@@ -125,7 +125,7 @@ export function QuadroAvisos() {
         </button>
       </div>
       <h1 className="py-1 uppercase font-bold md: text-[14px] dark:text-slate-50">Proximos eventos</h1>
-      <div className="h-[700px] overflow-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
+      <div className="h-[600px] overflow-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
       {eventos
         ? eventos
             .filter(filterEvents)

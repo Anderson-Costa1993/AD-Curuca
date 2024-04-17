@@ -15,7 +15,15 @@ export function EventsPage() {
     dados();
   }, []);
 
-  const filteredEvents = events.filter((event) => event.eventType === "Evento");
+  const currentDate = new Date();
+
+// Filtra os eventos para encontrar apenas os eventos do tipo "Evento" e com data posterior à atual
+const filteredEvents = events.filter((event) => {
+    // Obtém a data do evento
+    const eventDate = new Date(event.Data);
+    // Retorna verdadeiro se a data do evento for posterior à data atual
+    return event.eventType === "Evento" && eventDate > currentDate;
+});
 
   return (
     <div className={style["container-events"]}>

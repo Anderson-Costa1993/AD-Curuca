@@ -39,7 +39,7 @@ export function Navbar() {
           scrolled ? "" : "hidden"
         }`} />
             <LinkNav href="/">Home</LinkNav>
-            <LinkNav href="#">Eventos</LinkNav>
+            <LinkNav href="/eventos">Eventos</LinkNav>
             <LinkNav href="#">Contatos</LinkNav>
             <LinkNav href="https://www.instagram.com/ad.curuca_inaciomonteiro/" target="_blank">
               <i className="bi bi-instagram"></i>
