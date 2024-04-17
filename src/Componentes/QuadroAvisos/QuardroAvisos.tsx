@@ -73,11 +73,11 @@ export function QuadroAvisos() {
           <label className="text-xs/[12px] uppercase dark:bg-slate-950 dark:text-slate-50">
             Mês:
             <select
-              className="text-slate-950 cursor-pointer dark:bg-slate-950 dark:text-slate-50"
+              className= "bg-white text-slate-950 cursor-pointer dark:bg-slate-950 dark:text-slate-50"
               value={filtroMes === null ? "" : filtroMes.toString()}
               onChange={(e) => setFiltroMes(Number(e.target.value) || null)}
             >
-              <option value="" className=" bg-white text-xs/[12px]">
+              <option value="" className=" text-xs/[12px]">
                 TODOS
               </option>
               {moment.months().map((mes, index) => (
@@ -94,11 +94,11 @@ export function QuadroAvisos() {
           <label className="text-xs/[12px] uppercase dark:bg-slate-950 dark:text-slate-50">
             Semana:
             <select
-              className=" bg-whit text-slate-900 cursor-pointer dark:bg-slate-950 dark:text-slate-50"
+              className=" bg-white text-slate-900 cursor-pointer dark:bg-slate-950 dark:text-slate-50"
               value={filtroSemana === null ? "" : filtroSemana.toString()}
               onChange={(e) => setFiltroSemana(Number(e.target.value) || null)}
             >
-              <option className="text-xs/[12px] bg-white" value="">
+              <option className="text-xs/[12px]" value="">
                 TODAS
               </option>
               {semanasDisponiveis().map((semana) => (
