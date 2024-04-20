@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import style from "./events.module.css";
 import { EventosType } from "../../types";
 import { supabase } from "../../supabaseConfig";
 import CultoMocidae from "../../assets/cultoMocidade.jpg";
