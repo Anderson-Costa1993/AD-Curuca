@@ -2,38 +2,34 @@ import { useEffect, useState } from "react";
 import style from "./events.module.css";
 import { EventosType } from "../../types";
 import { supabase } from "../../supabaseConfig";
+import CultoMocidae from "../../assets/cultoMocidade.jpg";
 
 export function EventsPage() {
   const [events, setEvents] = useState<EventosType[]>([]);
 
-  const dados = async () => {
-    const { data } = await supabase.from("Events").select();
-    setEvents(data || []);
-  };
-
   useEffect(() => {
-    dados();
+    const fetchEvents = async () => {
+      const { data } = await supabase
+        .from("Events")
+        .select()
+        .eq("Data", new Date().toISOString().substr(0, 10)); // Filtra pela data atual
+      setEvents(data || []);
+    };
+
+    fetchEvents();
   }, []);
 
-  const currentDate = new Date();
-
-// Filtra os eventos para encontrar apenas os eventos do tipo "Evento" e com data posterior à atual
-const filteredEvents = events.filter((event) => {
-    // Obtém a data do evento
-    const eventDate = new Date(event.Data);
-    // Retorna verdadeiro se a data do evento for posterior à data atual
-    return event.eventType === "Evento" && eventDate > currentDate;
-});
+  console.log(events);
 
   return (
-    <div className={style["container-events"]}>
+    <div className="min-h-screen">
       <button className={style["buttom-return"]}>
         <a href="/">
           <i className="bi bi-arrow-left"></i>
         </a>
       </button>
       <ul>
-        {filteredEvents.map((event) => (
+        {events.map((event) => (
           <div className={style["iten-list"]} key={event.id}>
             <div className="card w-100">
               <h5 className="card-header">
@@ -49,6 +45,13 @@ const filteredEvents = events.filter((event) => {
           </div>
         ))}
       </ul>
+      <div className="w-2/5 h-[800px] my-28 mx-auto shadow-lg">
+        <img
+          src={CultoMocidae}
+          alt=""
+          className="w-full h-[800px]  rounded-xl"
+        />
+      </div>
     </div>
   );
 }
