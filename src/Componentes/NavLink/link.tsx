@@ -3,7 +3,6 @@ import { ComponentProps, useEffect, useState } from "react";
 interface LinkNavProps extends ComponentProps<"a"> {}
 
 export function LinkNav(props: LinkNavProps) {
-
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -20,13 +19,18 @@ export function LinkNav(props: LinkNavProps) {
   }, []);
 
   return (
-    <a
+    <div>
+         <a
       href=""
-      className={`text-slat-50 uppercase font-bold text-[12px] hover:border-b-2 border-b-slate-50
-       dark:text-slate-50 dark:border-b-blue-500/60 ${
-        scrolled ? "text-zinc-900 border-b-zinc-900/80" : ""
-      } md:justify-center md:items-center`}
+      className={`text-black dark:text-white uppercase font-bold text-[12px] hover:border-b-2 border-b-slate-50
+        dark:border-b-blue-500/60 ${
+          scrolled
+            ? " border-b-zinc-900/80 dark:border-b-white dark:text-white "
+            : "text-white"
+        } md:justify-center md:items-center`}
       {...props}
     ></a>
+    </div>
+
   );
 }
