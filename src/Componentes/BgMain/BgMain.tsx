@@ -1,7 +1,10 @@
+
 import bgImage from "../../assets/bgCuruca02.jpg";
 import logo from "../../assets/log.ad-removebg-preview.png";
 
 export function BgMain() {
+
+
   const divStyle = {
     backgroundImage: `url(${bgImage})`,
     backgroundSize: "cover",
@@ -26,7 +29,11 @@ export function BgMain() {
       >
         <div className="border-1 border-slate-300/80 m-1 p-8 rounded-full hover:border-2">
           <div className=" w-48 h-48 border-1 border-slate-50/90 p-10 rounded-full flex flex-col items-center justify-center hover:duration-1000  hover:border-2">
-            <img src={logo} alt="" className="w-32 contrast-125 drop-shadow-2xl hover:rotate-[360deg" />
+            <img
+              src={logo}
+              alt=""
+              className="w-32 contrast-125 drop-shadow-2xl hover:rotate-[360deg"
+            />
             <span className="text-white">#ADCURUÇÁ</span>
           </div>
         </div>

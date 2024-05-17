@@ -20,17 +20,14 @@ export function LinkNav(props: LinkNavProps) {
 
   return (
     <div>
-         <a
-      href=""
-      className={`text-black dark:text-white uppercase font-bold text-[12px] hover:border-b-2 border-b-slate-50
-        dark:border-b-blue-500/60 ${
-          scrolled
-            ? " border-b-zinc-900/80 dark:border-b-white dark:text-white "
-            : "text-white"
-        } md:justify-center md:items-center`}
-      {...props}
-    ></a>
+      <a
+        href=""
+        className={`text-black dark:text-white uppercase font-bold text-[12px] hover:border-b-2 border-b-slate-50
+      border-b-blue-500/60 ${
+        scrolled ? " border-b-zinc-900/80 dark:text-white " : "text-white"
+      } md:justify-center md:items-center`}
+        {...props}
+      ></a>
     </div>
-
   );
 }

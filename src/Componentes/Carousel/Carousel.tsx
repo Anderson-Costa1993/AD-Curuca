@@ -1,6 +1,5 @@
 import CultoTerca from "../../assets/cultoTercaOfc.jpg";
 import CultoMissoes from "../../assets/cultoMissoes.jpg";
-import CultoMocidae from "../../assets/cultoMocidade.jpg";
 
 export function Carousel() {
   return (
@@ -11,9 +10,6 @@ export function Carousel() {
       </div>
       <div className="carousel-item">
         <img src={CultoMissoes} className="d-block w-100" alt="..."/>
-      </div>
-      <div className="carousel-item">
-        <img src={CultoMocidae} className="d-block w-100" alt="..."/>
       </div>
     </div>
     <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
