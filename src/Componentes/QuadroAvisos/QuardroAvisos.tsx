@@ -67,7 +67,7 @@ export function QuadroAvisos() {
   };
 
   return (
-    <div className="border-1 border-blue-950/2000 shadow-2xl  shadow-blue-500/50 p-3 rounded-lg text-slate-900 font-bold flex flex-col dark:border-blue-600/20 dark:shadow-lg dark:shadow-blue-500/50">
+    <div className=" lg:w-2/4 md:w-fullborder-1 border-blue-950/2000 shadow-2xl  shadow-blue-500/50 p-3 rounded-lg text-slate-900 font-bold flex flex-col dark:border-blue-600/20 dark:shadow-lg dark:shadow-blue-500/50">
       <div className="flex items-center justify-center p-3 gap-4">
         <section className=" flex gap-4 p-2" >
           <label className="text-xs/[12px] uppercase dark:bg-slate-950 dark:text-slate-50">
@@ -124,8 +124,8 @@ export function QuadroAvisos() {
           Limpar Filtros
         </button>
       </div>
-      <h1 className="py-1 uppercase font-bold md: text-[14px] dark:text-slate-50">Proximos eventos</h1>
-      <div className="h-[600px] overflow-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
+      <h1 className="py-1 uppercase font-bold md:text-[14px] dark:text-slate-50">Proximos eventos</h1>
+      <div className="h:auto overflow-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
       {eventos
         ? eventos
             .filter(filterEvents)

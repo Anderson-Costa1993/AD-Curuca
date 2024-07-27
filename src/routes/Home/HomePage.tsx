@@ -5,8 +5,8 @@ import { QuadroAvisos } from "../../Componentes/QuadroAvisos/QuardroAvisos";
 export function HomePage() {
   return (
     <div className='min-h-screen w-full'>
-      <section className='flex flex-col justify-center items-center w-full gap-16  min-h-screen]'>
-        <div className='w-[96%] mt-8 lg:w-3/5'>
+      <section className='flex flex-col justify-center items-center w-full gap-16 min-h-screen]'>
+        <div className=' mt-8 lg:w-full flex justify-center items-center w-full'>
           <QuadroAvisos />
         </div>
         <div className="w-4/5 lg:w-2/6">
