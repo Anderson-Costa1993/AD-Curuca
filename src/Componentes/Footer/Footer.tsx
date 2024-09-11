@@ -40,12 +40,12 @@ export function Footer() {
                   <tr>
                     <td>SÁBADO</td>
                     <td>ESPECIAL</td>
-                    <td>18:00</td>
+                    <td>19:00</td>
                   </tr>
                   <tr>
                     <td>DOMINGO</td>
                     <td>CULTO DA FAMILIA</td>
-                    <td>18:00</td>
+                    <td>19:00</td>
                   </tr>
                 </tbody>
               </table>

@@ -145,7 +145,7 @@ export function QuadroAvisos() {
             ) // Ordena os eventos pela diferença de tempo
             .map((evento) => (
               <section className="flex w-full items-center my-2 border-1 border-blue-500/10" key={evento.id}>
-                <div className="bg-[#0c4d8d] text-slate-50 flex flex-col w-3/5 uppercase text-sm/[16px] font-bold py-1 px-3 gap-1 md:px-5 md:w-3/12">
+                <div className="bg-[#0c4d8d] text-slate-50 flex flex-col w-2/5 uppercase text-sm/[16px] font-bold py-1 px-3 gap-1 md:px-5 md:w-2/6">
                   <span
                     className=" border-b-2 border-slate-50 my-2 text-center text-[12px]"
                   >
@@ -154,7 +154,7 @@ export function QuadroAvisos() {
                   <span className=" border-slate-50 text-[12px]">{evento.eventDateTime.format("DD/MM/YYYY")}</span>
                   <span className=" border-slate-50 text-[12px]">{evento.eventDateTime.format("HH:mm")}</span>
                 </div>
-                <div className=" w-full flex flex-col items-center justify-center p-1 text-[12px] dark:text-slate-50 md:text-[8px]">
+                <div className=" w-3/5 flex flex-col items-center justify-center p-1 text-[12px] dark:text-slate-50 md:text-[8px]">
                   <span className="font-bold md:text-[16px]">{evento.eventName}</span>
                   <p className="text-red-500 text-[10px] text-center md:text-[14px]">{evento.eventDescription}</p>
                 </div>
