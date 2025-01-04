@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { EventosType } from "../../types";
 import { supabase } from "../../supabaseConfig";
-import CultoMissoes from "../../assets/cultoMissoes.jpg";
 
 export function EventsPage() {
   const [events, setEvents] = useState<EventosType[]>([]);
@@ -40,13 +39,6 @@ export function EventsPage() {
           </div>
         ))}
       </ul>
-      <div className="w-4/5 h-[600px] my-28 mx-auto shadow-lg lg:w-2/5 lg:h-[800px]">
-        <img
-          src={CultoMissoes}
-          alt=""
-          className="w-full h-[600px]  rounded-xl lg:h-[800px]"
-        />
-      </div>
     </div>
   );
 }

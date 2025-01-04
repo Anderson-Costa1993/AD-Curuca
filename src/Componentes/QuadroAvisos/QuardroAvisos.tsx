@@ -155,7 +155,7 @@ export function QuadroAvisos() {
                   <span className=" border-slate-50 text-[12px]">{evento.eventDateTime.format("HH:mm")}</span>
                 </div>
                 <div className=" w-3/5 flex flex-col items-center justify-center p-1 text-[12px] dark:text-slate-50 md:text-[8px]">
-                  <span className="font-bold md:text-[16px]">{evento.eventName}</span>
+                  <span className="font-bold md:text-[16px] text-center">{evento.eventName}</span>
                   <p className="text-red-500 text-[10px] text-center md:text-[14px]">{evento.eventDescription}</p>
                 </div>
               </section>

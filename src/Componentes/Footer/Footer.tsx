@@ -29,12 +29,12 @@ export function Footer() {
                 <tbody className=" dark:text-slate-50">
                   <tr>
                     <td>TERÇA-FEIRA</td>
-                    <td>DOUTRINA</td>
+                    <td>CAMPANHA</td>
                     <td>19:30</td>
                   </tr>
                   <tr>
                     <td>QUINTA-FEIRA</td>
-                    <td>CAMPANHA</td>
+                    <td>DOUTRINA</td>
                     <td>19:30</td>
                   </tr>
                   <tr>
