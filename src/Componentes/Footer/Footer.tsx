@@ -29,7 +29,7 @@ export function Footer() {
                 <tbody className=" dark:text-slate-50">
                   <tr>
                     <td>QUATA-FEIRA</td>
-                    <td>CULTO DE ENSIDO</td>
+                    <td>CULTO DE ENSINO</td>
                     <td>19:30</td>
                   </tr>
                   <tr>
