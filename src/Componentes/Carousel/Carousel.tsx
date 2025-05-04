@@ -1,5 +1,5 @@
-import CultoSceia from "../../assets/culto santa ceia.jpg";
-import CultoDom from "../../assets/cultoDomingo.jpg";
+import CultoMoc from "../../assets/cultoMocidade.jpg";
+import CultoCamp from "../../assets/cultoCampanha.jpg";
 
 export function Carousel() {
   return (
@@ -10,10 +10,10 @@ export function Carousel() {
     >
       <div className="carousel-inner rounded-xl">
         <div className="carousel-item active" data-bs-interval="10000">
-          <img src={CultoDom} className="d-block w-100" alt="..." />
+          <img src={CultoCamp} className="d-block w-100" alt="..." />
         </div>
         <div className="carousel-item" data-bs-interval="10000">
-          <img src={CultoSceia} className="d-block w-100" alt="..." />
+          <img src={CultoMoc} className="d-block w-100" alt="..." />
         </div>
       </div>
       <button

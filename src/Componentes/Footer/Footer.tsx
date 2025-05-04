@@ -28,13 +28,13 @@ export function Footer() {
                 </thead>
                 <tbody className=" dark:text-slate-50">
                   <tr>
-                    <td>TERÇA-FEIRA</td>
-                    <td>CAMPANHA</td>
+                    <td>QUATA-FEIRA</td>
+                    <td>CULTO DE ENSIDO</td>
                     <td>19:30</td>
                   </tr>
                   <tr>
-                    <td>QUINTA-FEIRA</td>
-                    <td>DOUTRINA</td>
+                    <td>SEXTA-FEIRA</td>
+                    <td>CAMPANHA</td>
                     <td>19:30</td>
                   </tr>
                   <tr>
@@ -45,7 +45,7 @@ export function Footer() {
                   <tr>
                     <td>DOMINGO</td>
                     <td>CULTO DA FAMILIA</td>
-                    <td>19:00</td>
+                    <td>18:00</td>
                   </tr>
                 </tbody>
               </table>
